@@ -20,7 +20,7 @@ let verifytoken= async (req,res,next)=>{
 
 let isAdimn= async (req,res,next)=>{
     console.log(req);
-     if(req.usertype=="Admin"){
+     if(req.body.usertype=="Admin"){
          console.log('authorized admin')
          next()
      }else{

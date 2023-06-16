@@ -7,6 +7,8 @@ userroute.get('/getusers',auth.isAdimn,usercontrol.getusers);
 userroute.post('/adduser',usercontrol.adduser);
 userroute.post('/login',usercontrol.login);
 
-userroute.get('/currentuser/:email',auth.verifytoken,usercontrol.currentuser)
+userroute.get('/currentuser/:email',auth.verifytoken,usercontrol.currentuser);
+
 
 module.exports=userroute;
+
