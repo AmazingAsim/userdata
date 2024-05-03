@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/api/adduser" method="post" target="_blank">
+        <input type="hidden" value="admin" name="usertype">
+        <input type="text" name="username" placeholder="name">
+        <input type="text" name="email" placeholder="email">
+        <input type="text" name="password" placeholder="password">
+        <button type="submit">submit</button>
+    </form>
+
+
+    
+
+
+<form action="/api/addProfile" method="post" enctype="multipart/form-data" target="_blank">
+    <input type="hidden" name="_id" value="644284566020f82288c3e842">
+    <input type="file" name="profile">
+    <button type="submit">submit</button>
+</form>
+</body>
+</html>
